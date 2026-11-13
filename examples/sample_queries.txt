@@ -1,0 +1,13 @@
+# Boolean retrieval examples
+sport + line
+sport OR line
+sport AND line
+sport NOT line
+sport AND NOT line
+NOT sport
+(sport + line) AND NOT technology
+
+# Ranked retrieval examples (the project's original ranking code)
+online retail markets
+profitable venture of computer
+messaging app available on android

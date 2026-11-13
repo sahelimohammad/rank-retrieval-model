@@ -1,0 +1,16 @@
+Boolean search examples (run: python main.py)
+
+sport + line       -> documents with sport OR line
+sport OR line      -> same as +
+sport AND line     -> documents containing both words
+sport AND NOT line -> documents with sport but without line
+sport NOT line     -> same as sport AND NOT line
+NOT sport          -> documents not containing sport
+(sport + line) AND NOT technology -> grouped Boolean query
+
+NOT > AND > OR (+) is the default operator precedence.
+Boolean results list every matching filename, in document-index order.
+Without Boolean operators, the original ranked search is unchanged.
+
+Required environment: Python with NLTK, spaCy, and English resources installed,
+as in the original project. Existing Indexes and tfidf_weights are retained.
